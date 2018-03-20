@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>主页</title>
+</head>
+<body>
+	{foreach name='data' item="vo"}
+		{$vo.id}:{$vo.title}<br>
+	{/foreach}
+	{foreach $data as $vo}
+		{$vo.id}:{$vo.title}<br/>
+	{/foreach}
+</body>
+</html>

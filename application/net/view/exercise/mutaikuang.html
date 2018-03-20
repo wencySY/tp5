@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>模态框</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+	<script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="padding: 100px;">
+	<!-- 模态框声明 -->
+	<div class="modal fade" id="modal">
+		<!-- 窗体声明 -->
+		<div class="modal-dialog modal-md">
+			<!-- 内容声明 -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h4 class="modal-title">会员登录</h4>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-4">1</div>
+							<div class="col-md-4">2</div>
+							<div class="col-md-4">3</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default">注册</button>
+					<button class="btn btn-primary">登录</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="btn btn-primary btn-lg" id="btn">点击弹出</button>
+</body>
+<script type="text/javascript">
+	// 点击弹出
+	$('#btn').on('click',function(){
+		$('#modal').modal('show');
+	})
+	//默认情况下关闭
+	$('#modal').modal({
+		show:false,
+		remote:"yuancheng.html",	//远程加载
+	});
+	$('#modal').on('show.bs.modal',function(){
+				alert('弹出前');
+	});
+	$('#modal').on('shown.bs.modal',function(){
+				alert('弹出后');
+	});
+	$('#modal').on('hide.bs.modal',function(){
+				alert('关闭前');
+	});
+	$('#modal').on('hidden.bs.modal',function(){
+				alert('关闭后');
+	});
+	$('#modal').on('loaded.bs.modal',function(){
+				alert('远程加载');
+	});
+</script>
+</html>

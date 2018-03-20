@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>折叠插件</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+	<script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="padding: 50px;background-color: #ccc;">
+	<div class="container" style="padding: 50px;background-color: #fff;">
+		<!-- 折叠效果 -->
+		<!-- <button class="btn btn-primary" data-toggle="collapse" data-target="#content">Bootstrap</button>
+		<div class="collapse" id="content">
+			<div class="well">
+			2018年3月14日，英国著名物理学家史蒂芬·霍金去世，享年76岁。《万物理论》是环球影业出品的霍金青年时代的传记片，影片灵感源于简·王尔德的回忆录《飞向无限:和霍金在一起的日子》，讲述了知名物理学家史蒂芬·霍金和他的第一任妻子简·王尔德始于剑桥大学的爱情故事及霍金患病前后的励志传奇。
+			</div>
+		</div> -->
+
+		<!-- 手风琴折叠 -->
+		<!-- <div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">第一部分连接</a>
+					</h4>
+				</div>
+				<div class="panel-collapse collapse" id="collapseOne">
+					<div class="panel-body">
+						第一部分内容
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">第二部分连接</a>
+					</h4>
+				</div>
+				<div class="panel-collapse collapse" id="collapseTwo">
+					<div class="panel-body">
+						第二部分内容
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">第三部分连接</a>
+					</h4>
+				</div>
+				<div class="panel-collapse collapse" id="collapseThree">
+					<div class="panel-body">
+						第三部分内容
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#collapseFour" data-toggle="collapse" data-parent="#accordion">第四部分连接</a>
+					</h4>
+				</div>
+				<div class="panel-collapse collapse" id="collapseFour">
+					<div class="panel-body">
+						第四部分内容
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		
+
+
+		<!-- <div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#collapseOne" data-toggle="collapse">第一部分连接</a>
+					</h4>
+				</div>
+				<div class="panel-collapse collapse" id="collapseOne">
+					<div class="panel-body">
+						第一部分内容
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#collapseTwo" data-toggle="collapse">第二部分连接</a>
+					</h4>
+				</div>
+				<div class="panel-collapse collapse" id="collapseTwo">
+					<div class="panel-body">
+						第二部分内容
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#collapseThree" data-toggle="collapse">第三部分连接</a>
+					</h4>
+				</div>
+				<div class="panel-collapse collapse" id="collapseThree">
+					<div class="panel-body">
+						第三部分内容
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#collapseFour" data-toggle="collapse">第四部分连接</a>
+					</h4>
+				</div>
+				<div class="panel-collapse collapse" id="collapseFour">
+					<div class="panel-body">
+						第四部分内容
+					</div>
+				</div>
+			</div>
+		</div> -->
+		
+
+		<button class="btn btn-primary" data-toggle="collapse" data-target="#content">Bootstrap</button>
+		<div class="collapse" id="content">
+			<div class="well">
+			2018年3月14日，英国著名物理学家史蒂芬·霍金去世，享年76岁。《万物理论》是环球影业出品的霍金青年时代的传记片，影片灵感源于简·王尔德的回忆录《飞向无限:和霍金在一起的日子》，讲述了知名物理学家史蒂芬·霍金和他的第一任妻子简·王尔德始于剑桥大学的爱情故事及霍金患病前后的励志传奇。
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	// $('#collapseOne,#collapseTwo,#collapseThree,#collapseFour').collapse({
+	// 	paret: '#accordion',
+	// 	toggle:false,
+	// });
+	// 
+	$('button').on('click',function(){
+		$('#content').collapse('toggle');
+	});
+	//shown hide hiden
+	$('#content').on('show.bs.collapse',function(){
+		alert('弹出前');
+	});
+</script>
+</html>

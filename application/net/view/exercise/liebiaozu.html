@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>列表组面板和嵌入组件</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+	<script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="padding: 50px;background-color: #ccc;">
+	<div class="container" style="padding: 50px;background-color: #fff;">
+		<ul class="list-group">
+			<li class="list-group-item">1.这是首页</li>
+			<li class="list-group-item">2.这是第二页 <span class="badge">10</span></li>
+			<li class="list-group-item">3.这是第三页</li>
+			<li class="list-group-item">4.这是第四页</li>
+		</ul>
+		
+		<div class="list-group">
+			<a href="" class="list-group-item">1.这是首页</a>
+			<a href="" class="list-group-item active" >2.这是第二页<span class="badge">10</span></a>
+			<a href="" class="list-group-item">3.这是第三页</a>
+			<a href="" class="list-group-item">4.这是第四页</a>
+		</div>
+
+		<div class="list-group">
+		  <button type="button" class="list-group-item">Cras justo odio</button>
+		  <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+		  <button type="button" class="list-group-item">Morbi leo risus</button>
+		  <button type="button" class="list-group-item list-group-item-success">Porta ac consectetur ac</button>
+		  <button type="button" class="list-group-item disabled">Vestibulum at eros</button>
+		</div>
+
+		<div class="list-group">
+			<a href="" class="list-group-item"> 
+				<h4>1.这是首页</h4>
+				<p>sdfghjk</p>
+			</a>
+			<a href="" class="list-group-item active" >2.这是第二页<span class="badge">10</span></a>
+			<a href="" class="list-group-item">3.这是第三页</a>
+			<a href="" class="list-group-item">4.这是第四页</a>
+		</div>
+	<!-- 面板组件 -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">我是面板标题</h3> 
+			</div>
+			<div class="panel-body">
+				我是登录面板
+			</div>
+			<table class="table">
+				<tr>
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+			</table>
+		<ul class="list-group">
+			<li class="list-group-item">1.这是首页</li>
+			<li class="list-group-item">2.这是第二页 <span class="badge">10</span></li>
+			<li class="list-group-item">3.这是第三页</li>
+			<li class="list-group-item">4.这是第四页</li>
+		</ul>
+			<div class="panel-footer">我是底部</div>
+		</div>
+		
+	</div>
+		
+
+</body>
+</html>

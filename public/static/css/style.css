@@ -1,0 +1,23 @@
+@charset "utf-8";
+.logo{
+	padding: 0;
+}
+#myCarousel{
+	margin: 50px 0 0 0;
+	/*margin-top: 50px;*/
+}
+#navbar-collapse ul{
+	margin-top: 0;
+}
+
+.item img{
+	width: 1170px;
+	/*height: */
+}
+.carousel-inner img{
+	margin: 0 auto;
+}
+.carousel-control{
+	font-size: 100px;
+	/*line-height: 585px;*/
+}

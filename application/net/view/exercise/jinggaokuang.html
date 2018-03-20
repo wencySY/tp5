@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>警告框</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+	<script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		img{
+			width: 900px;
+		}
+	</style>
+</head>
+<body style="padding: 50px;background-color: #ccc;">
+	<div class="container" style="padding: 50px;background-color: #fff;">
+		<!-- <div class="alert alert-danger fade in">
+			<button class="close" type="button"  data-dismiss="alert">
+				<span>&times;</span></button>
+			<p>您的浏览器不支持!</p>
+		</div> -->
+
+		<div id="alert" class="alert alert-danger fade in">
+			<button class="close" type="button"  >
+				<span>&times;</span></button>
+			<p>您的浏览器不支持!</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$('.alert').on('click',function(){
+		$('#alert').alert('close');
+	});
+	$('#alert').on('close.bs.alert',function(){
+		alert('关闭前');
+	});
+	$('#alert').on('closed.bs.alert',function(){
+		alert('关闭后调用');
+	});
+</script>
+</html>

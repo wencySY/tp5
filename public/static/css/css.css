@@ -1,0 +1,346 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ul li {
+    list-style: none;
+    text-align: center;
+}
+/*------------------------------------------   zhuce <--> index   -------------------------------------*/
+
+.body {
+    background-color: #2175BB;
+}
+a {
+    text-decoration: none;
+}
+.all {
+    width: 450px;
+    height: 400px;
+    border: 1px solid #3EB7EB;
+    margin: 50px auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+}
+.allA {
+    width: 450px;
+    height: 140px;
+    background-image: url(../../../public/static/img/login.png);
+    background-size: 100% 100%;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    line-height: 140px;
+}
+.allAa {
+    text-shadow: 8px -5px 2px #787070;
+}
+.allB {
+    width: 450px;
+    height: 260px;
+}
+.img1 {
+    width: 450px;
+    height: 140px;
+}
+#username {
+    margin-top: 45px;
+}
+#password, #button, #button1, #yzm, #yzmm {
+    margin-top: 25px;
+}
+#password, #username, #yzm {
+    width: 140px;
+    height: 15px;
+}
+#yzm {
+    width: 100px;
+}
+#yzmm {
+    width: 130px;
+}
+.yy {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #494545;
+}
+#button, #button1 {
+    width: 40px;
+    height: 25px;
+    background-color: #2275BC;
+    /*	text-align: center;
+	line-height: 25px;*/
+}
+/*--------------------------------------------   frame   ---------------------------------------*/
+
+.da {
+    width: 1164px;
+    height: 99px;
+    border: 1px solid #3EB7EB;
+    background-color: #2175BB;
+}
+.da-a {
+    width: 782px;
+    height: 99px;
+    float: left;
+}
+#dd {
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+.da-b {
+    width: 382px;
+    height: 99px;
+    float: left;
+    /*border: 1px solid red;*/
+}
+#de {
+    margin-right: 25px;
+    color: #FFFFFF;
+    /*text-align: center;*/
+    /*line-height: 99px;*/
+    margin-top: 30px;
+    /*font-size: 25px;*/
+}
+.db {
+    width: 1164px;
+    height: 354px;
+    border: 1px solid #3EB7EB;
+}
+.db-a {
+    width: 190px;
+    height: 354px;
+    float: left;
+    border: 1px solid #3EB7EB;
+    background-color: #D6CCFB;
+}
+.li1 {
+    width: 190px;
+    height: 25px;
+    padding-top: 10px;
+    background-color: #a1afc9;
+    border-bottom: 1px solid #0DB3F1;
+}
+.li2 {
+    width: 190px;
+    height: 25px;
+    padding-top: 10px;
+    background-color: #c2ccd0;
+    border-bottom: 1px solid #0DB3F1;
+}
+.db-b1, .db-b2, .db-b3, .db-b4 {
+    width: 970px;
+    height: 354px;
+    float: left;
+    border: 1px solid #3EB7EB;
+    /*background-color: rgba(121,222,143,0.6);*/
+}
+.db-b2, .db-b3, .db-b4 {
+    display: none;
+}
+.dc {
+    width: 1164px;
+    height: 48px;
+    border: 1px solid #3EB7EB;
+    text-align: center;
+    padding-top: 5px;
+}
+/*------------------------*/
+
+.img {
+    width: 15px;
+    height: 15px;
+}
+.img2 {
+    width: 350px;
+    height: 80px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.img3 {
+    margin-top: 28px;
+    width: 35px;
+    height: 35px;
+}
+.img4 {
+    margin-top: 28px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+}
+.img5 {
+    width: 20px;
+    height: 20px;
+}
+#dv1-1, #dv2-2, #dv3-3, #dv4-4 {
+    font-size: 20px;
+}
+.li2:hover {
+    background-color: white;
+}
+.da-a-1 {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.da-a-1-1 {
+    width: 100%;
+    height: 70%;
+    /*padding-top: 10px;*/
+    margin-top: 30px;
+    padding-left: 40px;
+}
+.da-a-1-2 {
+    width: 100%;
+    height: 30%;
+    margin-top: -22px;
+}
+.da-a-2 {
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.font {
+    color: #9ed900;
+}
+table {
+    width: 970px;
+    /*height: 100px;*/
+}
+/*-------------------------show.html-------------------------*/
+
+#title1 {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+}
+#info {
+    margin: auto;
+    text-align: center;
+    color: #B2A5C2;
+}
+#content {
+    margin: auto;
+    text-align: left;
+    width: 800px;
+}
+#foot {
+    margin: auto;
+    text-align: right;
+    width: 800px;
+}
+#img {
+    margin: auto;
+    width: 800px;
+}
+#img img {
+    width: 400px;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+/*-------------------------分页-------------------------*/
+
+#fenye {
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 800px;
+    font-size: 25px;
+}
+li {
+    /*padding-left: 10px;*/
+    float: left;
+}
+a:visited {
+    color: blue;
+}
+.active {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.disabled {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*-------------------------edit页面-------------------------*/
+
+.edit {
+    width: 1166px;
+    height: 509px;
+    background-color: #BED393;
+}
+.div {
+    width: 700px;
+    height: 450px;
+    background-color: #BED393;
+    margin-left: 140px;
+    /*margin:0 auto; */
+    padding-top: 40px;
+    padding-left: 30px;
+    border: 1px solid #5B5858;
+}
+.font1 {
+    font-size: 35px;
+    margin-left: 430px;
+    color: #0404E7;
+}
+.input {
+    width: 600px;
+}
+.input1 {
+    width: 650px;
+    height: 230px;
+    overflow: -scroll;
+    overflow-x: hidden;
+    resize: none;
+}
+#button2 {
+    width: 35px;
+    height: 27px;
+    margin-left: 270px;
+    background-color: #CABCF9;
+    color: #FFFFFF;
+}
+#button3 {
+    width: 35px;
+    height: 27px;
+    margin-left: 20px;
+    background-color: #CABCF9;
+    color: #FFFFFF;
+}
+/*---------------------------------------- addimg  --------------------------------------*/
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #1039ED;
+}
+.div1 {
+    width: 500px;
+    height: 350px;
+    margin: 10px auto;
+    /*background: url(../../../public/static/img/3.png);*/
+    border: 1px solid black;
+    background-size: 100% 100%;
+    padding-left: 100px;
+    padding-top: 30px;
+    color: #1039ED;
+    overflow: -scroll;
+    overflow-x: hidden;
+}
+.inputt {
+    color: #1039ED;
+}
+/*------------------------跳转样式---------------------*/
+#go_top {
+    position: fixed;
+    LEFT: 85%;
+    bottom: 50px;
+    font-size: 20px;
+}

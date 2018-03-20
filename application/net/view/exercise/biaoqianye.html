@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>标签页</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+	<script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="padding: 50px;background-color: #ccc;">
+	<div class="container" style="padding: 50px;background-color: #fff;">
+		<!-- <ul class="nav nav-pills" >
+			<li class="active" ><a href="#HTML5" data-toggle="tab">HTML5</a></li>
+			<li><a href="#bootstrap" data-toggle="tab">bootstrap</a></li>
+			<li><a href="#jQuery" data-toggle="tab">jQuery</a></li>
+			<li><a href="#PHP" data-toggle="tab">PHP</a></li>
+		</ul> -->
+		<ul id="nav" class="nav nav-tabs" >
+			<!-- data-toggle="tab"声明式 -->
+			<li class="active"><a href="#HTML5" \>HTML5</a></li>
+			<li><a href="#bootstrap">bootstrap</a></li>
+			<li><a href="#jQuery" >jQuery</a></li>
+			<li><a href="#PHP" >PHP</a></li>
+		</ul>
+
+		<div class="tab-content" style="padding: 0 10px;">
+			<div class="tab-pane fade in active" id="HTML5">1111111112018年3月14日，英国著名物理学家史蒂芬·霍金去世，享年76岁。《万物理论》是环球影业出品的霍金青年时代的传记片，影片灵感源于简·王尔德的回忆录《飞向无限:和霍金在一起的日子》，讲述了知名物理学家史蒂芬·霍金和他的第一任妻子简·王尔德始于剑桥大学的爱情故事及霍金患病前后的励志传奇。这是百度百科对这部影片的介绍。作家、赛车手韩寒表示，失控奔驰首先感谢交警，并万幸车主安全，但建议彻查，“这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理解。”作家、赛车手韩寒表示，失控奔驰首先感谢交警，并万幸车主安全，但建议彻查，“这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理解。”
+			</div>
+			<div class="tab-pane fade" id="bootstrap">2222222018年3月14日，英国著名物理学家史蒂芬·霍金去世，享年76岁。《万物理论》是环球影业出品的霍金青年时代的传记片，影片灵感源于简·王尔德的回忆录《飞向无限:和霍金在一起的日子》，讲述了知名物理学家史蒂芬·霍金和他的第一任妻子简·王尔德始于剑桥大学的爱情故事及霍金患病前后的励志传奇。这是百度百科对这部影片的介绍。作家、赛车手韩寒表示，失控奔驰首先感谢交警，并万幸车主安全，但建议彻查，“这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理解。”作家、赛车手韩寒表示，失控奔驰首先感谢交警，并万幸车主安全，但建议彻查，“这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理解。”
+			</div>
+			<div class="tab-pane fade" id="jQuery">3333332018年3月14日，英国著名物理学家史蒂芬·霍金去世，享年76岁。《万物理论》是环球影业出品的霍金青年时代的传记片，影片灵感源于简·王尔德的回忆录《飞向无限:和霍金在一起的日子》，讲述了知名物理学家史蒂芬·霍金和他的第一任妻子简·王尔德始于剑桥大学的爱情故事及霍金患病前后的励志传奇。这是百度百科对这部影片的介绍。作家、赛车手韩寒表示，失控奔驰首先感谢交警，并万幸车主安全，但建议彻查，“这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理解。”作家、赛车手韩寒表示，失控奔驰首先感谢交警，并万幸车主安全，但建议彻查，“这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理解。”
+			</div>
+			<div class="tab-pane fade" id="PHP">44444442018年3月14日，英国著名物理学家史蒂芬·霍金去世，享年76岁。《万物理论》是环球影业出品的霍金青年时代的传记片，影片灵感源于简·王尔德的回忆录《飞向无限:和霍金在一起的日子》，讲述了知名物理学家史蒂芬·霍金和他的第一任妻子简·王尔德始于剑桥大学的爱情故事及霍金患病前后的励志传奇。这是百度百科对这部影片的介绍。作家、赛车手韩寒表示，失控奔驰首先感谢交警，并万幸车主安全，但建议彻查，“这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理解。”作家、赛车手韩寒表示，失控奔驰首先感谢交警，并万幸车主安全，但建议彻查，“这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理解。”
+			</div>
+		</div>
+
+	</div>
+
+</body>
+<script type="text/javascript">
+	$('#nav a').on('click',function(e){
+		//阻止默认行为
+		e.preventDefault();
+		$(this).tab('show');
+	});
+	$('#nav a').on('show.bs.tab',function(){
+		alert('显示前触发');
+	});
+	$('#nav a').on('shown.bs.tab',function(){
+		alert('显示后触发');
+	});
+</script>
+</html>

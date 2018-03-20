@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>提示插件</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+	<script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="padding: 50px;background-color: #ccc;">
+	<div class="container" style="padding: 50px;background-color: #fff;">
+		<!-- <a href="" 
+		标签页声明
+		data-toggle="tooltip" 
+		提示信息
+		title='<b style="color: red;">超文本提示</b>'
+		原始数据
+		data-original-title="sdfgh"
+		关闭动画
+		data-animation="false"
+		是否解析HTML标签
+		data-html="true"
+		提示框的位置
+		data-placement="auto"
+		如何触发
+		data-trigger="hover focus"
+		延迟时间
+		data-delay="1000"
+		原始模板
+		data-template="<div class='tooltip'><div class='tooltip-arrow'></div><div class='tooltip-inner'></div> </div>"
+		>HTML5</a> -->
+		<!-- 在组中需要设置 container:'body'-->
+		<!-- <div class="btn-group">
+			<button class="btn btn-default" data-toggle="tooltip" title='超文本提示'>1</button>
+			<button class="btn btn-default" data-toggle="tooltip" title='超文本提示'>2</button>
+			<button class="btn btn-default" data-toggle="tooltip" title='超文本提示'>3</button>
+		</div> -->
+
+		<!-- <div id="aaa">
+		<a href="" rel="tooltip1" data-toggle="tooltip" title='超文本提示'>html5</a>
+		<a href="" data-toggle="tooltip" title='超文本提示'>html5</a>
+		</div> -->
+
+		<a href="" rel="tooltip1" data-toggle="tooltip" title='超文本提示'>html5</a>
+		<button class="btn btn-default">按钮</button>
+	</div>
+
+</body>
+<script type="text/javascript">
+	$('a').tooltip({
+		trigger:'hover'
+	});
+	$('a').on('show.bs.tooltip',function(){
+		alert('显示前触发');
+	});
+	$('button').on('click',function(){
+		// $('a').tooltip('hide');
+		// 反转
+		// $('a').tooltip('toggle');
+		// 销毁
+		$('a').tooltip('destroy');
+	});
+
+
+	// $('button').tooltip({
+	// 	delay:{
+	// 		show:100,
+	// 		hide:100,
+	// 	},
+	// 	container:'body'
+	// 	// placement:'left',
+	// });
+	// 用自定义属性来绑定
+	// $('#aaa').tooltip({
+	// 	selector:'a[rel=tooltip1]'
+	// });
+</script>
+</html>

@@ -1,0 +1,8 @@
+{extend name="base/base"/} 				{//这是继承的开始}
+{block name="title"}{$title}{/block} 	{//这是修改原来的区块}
+{block name="menu"}{$name} {/block} 	
+{block name="left"}{/block} 			{//这是清空原来的内容}
+{block name="footer"}{__block__}+底部2{/block} 	{//这是与原来的模板合并}
+{block name="header"}{include file='viewextend/header,viewextend/foot' /}{/block} 	{//这是包含文件,可以一次包含多个}
+{block name="foot"}{include file='viewextend/foot' name="$name"  /}{/block} 	{//替换其中的变量可以这样}
+{block name="aaa"}content{/block}  	{//不能定义继承模板中未定义的区块}

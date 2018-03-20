@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>展示用户</title>
+	<style type="text/css">
+		table{
+			margin: auto;
+			text-align: center;
+			height: 100px;
+			width: 400px;
+		}
+		.add{
+			text-align: center;
+		}
+		a:visited{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<table border="1px" >
+		
+			
+			<th>名称</th>
+			<th>注册时间</th>
+			<th>性别</th>
+			<th>年龄</th>
+			<th>编辑</th>
+			<th>删除</th>
+		
+		
+		{volist name="data" id="vo"}
+		<tr>
+			<td>{$vo.name}</td>
+			<td>{$vo.reg_time}</td>
+			<td>{eq name="vo.sex" value="1"}男{else/}女{/eq}</td>
+			<td>{$vo.age}</td>
+			<td><a href="{:url('edit',['id' => $vo.id ])} ">编辑</a></td>
+			<td><a href="{:url('del',['id' => $vo.id ])}">删除</a></td>
+		</tr>
+		{/volist}
+	</table>
+	<p class='add'><a href="add">添加用户</a></p>
+</body>
+</html>

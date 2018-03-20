@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="__STATIC__/css/css.css"> -->
+	<link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+	<script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="padding: 50px;padding-bottom:0px;background-color: #ccc;">
+	<!-- <div class="container" style="padding: 50px;background-color: #fff;"> -->
+		<div class="jumbotron" style="height: 540px;" style="background-color: #2175BB;">
+			<div class="container" >
+		   	<div class="row " style="margin-top: 100px;">
+		   		<!-- <div style="border: 1px solid red;height: 400px" class="col-lg-4"></div> -->
+			<form class="form form-horizontal" method="" action="checkRegister">
+				<div class="form-group">
+					<label class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-7 control-label" for="username">用户名:</label>
+					<div class="col-lg-2">
+					<input type="text" name="username"  id="username" class="form-control" placeholder="请输入用户名"></div>
+				</div>
+				<div class="form-group">
+					<label class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-7 control-label" for="password">密码:</label>
+					<div class="col-lg-2">
+					<input type="password" name="password" id="password" class="form-control" placeholder="请输入密码"></div>
+				</div>
+				<div class="form-group">
+					<label class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-7 control-label" for="password">重复密码:</label>
+					<div class="col-lg-2">
+					<input type="password" name="password" id="password" class="form-control" placeholder="请输入密码"></div>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-7"></div>
+				<button type="submit" class="btn btn-danger btn-sm" style="margin-top: 20px;margin-left: 10px" >提交表单</button>
+				<button type="submit" class="btn btn-success btn-sm" style="margin-top: 20px;margin-left: 10px">注册</button>
+			</form>
+			</div>
+			</div>
+		<!-- </div> -->
+		<div id='tips' ></div>
+	</div>
+</body>
+</html>

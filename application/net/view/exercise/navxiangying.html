@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>响应式导航条-项目实战</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="__STATIC__/css/style.css">
+	<script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body style="background-color: #ccc;">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">品牌logo</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-fire"></span> 咨询</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-list"></span> 案例</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<!-- <div class="container"> -->
+	<div id="myCarousel" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active" >
+				<img src="__STATIC__/img/1000.jpg" alt="第一张">
+					<div class="carousel-caption">
+						<h3>第一部分</h3>
+						<p>这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理</p>
+					</div>
+			</div>
+			<div class="item" > 
+				<img src="__STATIC__/img/1001.jpg" alt="第一张">
+					<div class="carousel-caption">
+						<h3>第一部分</h3>
+						<p>这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理</p>
+					</div>
+			</div>
+			<div class="item">
+				<img src="__STATIC__/img/1002.jpg" alt="第一张">
+					<div class="carousel-caption">
+						<h3>第一部分</h3>
+						<p>这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理</p>
+					</div>
+			</div>
+			<div class="item">
+				<img src="__STATIC__/img/1003.jpg" alt="第一张">
+					<div class="carousel-caption">
+						<h3>第一部分</h3>
+						<p>这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理</p>
+					</div>
+			</div>
+		</div>
+		<a href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+		<a href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+	</div>
+	<!-- </div> -->
+</body>
+<script type="text/javascript">
+	
+	$(function(){
+		$('#myCarousel').carousel({
+			intarvel:4000,
+		});
+		//设置垂直居中
+		// $('carousel-control').css('line-height', $('.carousel-inner img').height()+'px');
+		$(window).resize(function(){
+			var $height =   $('.carousel-inner img').eq(0).height() ||
+							$('.carousel-inner img').eq(1).height()	||
+							$('.carousel-inner img').eq(2).height()	||
+							$('.carousel-inner img').eq(3).height();
+			$('carousel-control').css('line-height', $height + 'px');
+		});
+		
+	});
+// $(".left").click(function(){
+// 	// alert(123);
+// 	console.log($('.carousel-inner').height());
+// })
+</script>
+</html>

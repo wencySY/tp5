@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>编辑新闻</title>
+	<link rel="stylesheet" type="text/css" href="__STATIC__/css/css.css">
+</head>
+<body class="edit">
+<font class="font1">编辑新闻</font>
+<div class="div">
+	<form action="edit" method="post" >
+		<input type="hidden"  name="ida" value="{$data['id']}" class="input">
+		<p><label>标题:</label>
+		<input type="text" name="title" value="{$data['title']}" class="input"></p><br/>
+
+		<p><label>作者:</label>
+		<input type="text" name="author" value="{$data['author']}" class="input"></p><br/>
+		<p><label>类别:</label>
+		<select name="status">
+			<option value="0">游戏</option>
+			<option value="1">体育</option>
+			<option value="2">汽车</option>
+			<option value="3">奇闻</option>
+		<select></p><br/>
+			<p>内容:</p>
+		<p>
+		<textarea name="content" class="input1" style="resize: none;" >{$data['content']}</textarea></p><br/>
+		<p><input type="button" value="发表" id="button2">&nbsp;<input type="reset" name="重置" id="button3"></p>
+	</form>
+</div>
+</body>
+
+<script type="text/javascript" src="__STATIC__/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#button2').click(function(){
+			$('form').submit();
+		});
+	});
+</script>
+</html>

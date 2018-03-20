@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            新闻
+        </title>
+        <link href="__STATIC__/css/css.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+        <script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+        <script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1 id="title1">
+            {$data['title']}
+        </h1>
+        <div id="info">
+            作者: {$data['author']} 时间:{$data['create_time']} 类别:{$data['status']}
+        </div>
+        <div id="content">
+            {$data['content']}
+        </div>
+        <div id="img">
+            {foreach name="imgarr" item="vol"}
+            <img src="__STATIC__/uploads/{$vol}">
+                {/foreach}
+            </img>
+        </div>
+        <div class="clear">
+        </div>
+        <div id="foot">
+            更新时间: {$data['update_time']}
+        </div>
+        <div id="go_top">
+            <img alt="" class="img5" src="__STATIC__/img/5.png">
+                <b>
+                    回到顶部
+                </b>
+            </img>
+        </div>
+    </body>
+    <script src="__STATIC__/js/jquery-1.4.2.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){ $("#go_top").hide(); 
+            $(function () { 
+        //检测屏幕高度 
+            var height=$(window).height();
+         //scroll() 方法为滚动事件 
+            $(window).scroll(function(){ if ($(window).scrollTop()>height){ $("#go_top").fadeIn(500); }else{ $("#go_top").fadeOut(500); } }); $("#go_top").click(function(){ $('body,html').animate({scrollTop:0},100); return false; }); }); });
+    </script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>轮播图</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="__STATIC__/bootstrap/css/bootstrap.min.css">
+	<script  src="__STATIC__/bootstrap/js/jquery-3.3.1.js"></script>
+	<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		#img1 img{
+			width: 900px;
+		}
+	</style>
+</head>
+<body style="padding: 50px;background-color: #ccc;">
+	<div class="container" style="padding: 50px;background-color: #fff;">
+		<!-- 轮播图 -->
+		<!-- data-ride="carousel"自动轮播(5秒钟) -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 900px;">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+			<div id="img1" class="carousel-inner">
+				<div class="item active">
+					<img src="__STATIC__/img/1000.jpg" alt="第一张">
+					<div class="carousel-caption">
+						<h3>第一部分</h3>
+						<p>这件事情太多奇怪的地方，超越了我对汽车知识和驾驶知识的理</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="__STATIC__/img/1001.jpg" alt="第二张">
+					<div class="carousel-caption">
+						<h3>第二部分</h3>
+						<p>王尔德始于剑桥大学的爱情故事及霍金患病前后的励志传奇</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="__STATIC__/img/1002.jpg" alt="第三张">
+					<div class="carousel-caption">
+						<h3>第三部分</h3>
+						<p>讲述了知名物理学家史蒂芬·霍金和他的第一任妻子简</p>
+					</div></div>
+				<div class="item">
+					<img src="__STATIC__/img/1003.jpg" alt="第四张">
+					<div class="carousel-caption">
+						<h3>第四部分</h3>
+						<p>的霍金青年时代的传记片，影片灵感源于简</p>
+					</div>
+				</div>
+			</div>
+			<a href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+			<a href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+		</div>
+
+		<button class="btn btn-default" id="cycle">开始</button>
+		<button class="btn btn-default" id="pause">停止</button>
+		<button class="btn btn-default" id="number">播放第三条</button>
+		<button class="btn btn-default" id="prev">上一页</button>
+		<button class="btn btn-default" id="next">下一页</button>
+	</div>	
+</body>
+<script type="text/javascript">
+	// $('#myCarousel').carousel({
+	// 	//间隔时间
+	// 	interval:2000,
+	// 	//悬浮暂停	
+	// 	pause:'hover',
+	// 	//播放次数
+	// 	// wrap:false,
+	// });
+	// 
+	$('#cycle').on('click',function(){
+		$('#myCarousel').carousel('cycle');
+	});
+	$('#pause').on('click',function(){
+		$('#myCarousel').carousel('pause');
+	});
+	$('#number').on('click',function(){
+		$('#myCarousel').carousel(2);
+	});
+	$('#prev').on('click',function(){
+		$('#myCarousel').carousel('prev');
+	});
+	$('#next').on('click',function(){
+		$('#myCarousel').carousel('next');
+	});
+
+	// $('#myCarousel').on('slide.bs.carousel',function(){
+	// 	alert('执行前调用');
+	// });
+	// $('#myCarousel').on('slid.bs.carousel',function(){
+	// 	alert('执行完毕调用');
+	// });
+</script>
+</html>
