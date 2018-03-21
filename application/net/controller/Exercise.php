@@ -12,5 +12,17 @@ class Exercise extends Controller
 	}	
 	public function test1(){
 		return $this->fetch('yuancheng');
+	}
+	public function index(){
+		return $this->fetch('exercise/demo/index');
+	}	
+	public function information(){
+		return $this->fetch('exercise/demo/information');
+	}		
+	public function example(){
+		return $this->fetch('exercise/demo/example');
+	}	
+	public function about(){
+		return $this->fetch('exercise/demo/about');
 	}	
 }
